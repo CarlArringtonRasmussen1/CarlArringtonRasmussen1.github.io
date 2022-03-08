@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Module 04 Assignment</title>
+  </head>
+  <body>
+    <center>
+      <h3>Tip Calculator</h3>
+      <p>Enter the dollar amount for the service. Must be between $5.00 and $500.00.</p>
+      <input type="text" id="dollarAmount" placeholder="Enter Dollar Amount $">
+
+      <p>Select the service quality:</p>
+      <input type="radio" name="serviceQuality" value="great" id="great">
+      <label for="great">Great (20% tip)</label>
+      <input type="radio" name="serviceQuality" value="ok" id="ok">
+      <label for="ok">OK (15% tip)</label>
+      <input type="radio" name="serviceQuality" value="poor" id="poor">
+      <label for="poor">Poor (10% tip)</label>
+
+      <p>Click the button to calculate the tip amount and the final price</p>
+      <button onclick="calculate()">Click Here</button>
+
+      <p id="servicePrice"></p>
+      <p id="tipAmount"></p>
+      <p id="finalPrice"></p>
+
+      <p>
+        <a href="../index.html">Return to the Home Page</a>
+      </p>
+      <footer>
+          <em>Copyright &copy; 2022 Dr. Arrington's Virtual Classroom</em>
+      </footer>
+      <script src="Mod4Assignment.js"></script>
+    </center>
+  </body>
+</html>
